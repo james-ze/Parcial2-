@@ -1,7 +1,7 @@
 
-package Logica;
+package model;
 
-import Interfaz.Interfaz;
+import view.mainPage;
 import java.sql.Connection;
 
 public class Main {
@@ -14,7 +14,7 @@ public class Main {
         Connection conec = conexion.conectar();
         
         // interfaz grafica
-        Interfaz mostrar = new Interfaz ();
+        mainPage mostrar = new mainPage ();
         mostrar.setVisible(true);
         
     }
